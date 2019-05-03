@@ -17,15 +17,15 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:background}
-background = ${xrdb:backgroundAlt}
+background = ${xrdb:background}
+;background = ${xrdb:backgroundAlt}
 ;background-alt = ${xrdb:background}
 background-alt = ${xrdb:backgroundAlt}
 
 foreground = ${xrdb:foreground}
 ;foreground = ${xrdb:backgroundAlt}
-foreground-alt = ${xrdb:background}
-;foreground-alt = ${xrdb:foregroundAlt}
+;foreground-alt = ${xrdb:background}
+foreground-alt = ${xrdb:foregroundAlt}
 
 primary = #f3e5da
 secondary = #e60053
@@ -51,7 +51,7 @@ color15 = ${xrdb:color15}
 [bar/main_bar]
 monitor = eDP-1
 width = 100%
-height = 25
+height = 22 
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -60,33 +60,33 @@ fixed-center = true
 background = ${colors.background-alt}
 foreground = ${colors.foreground-alt}
 
-line-size = 2
+line-size = 0
 line-color = #f00
 
 border-size = 0
 border-color = #00000000
 
 padding-left = 1
-padding-right = 2
+padding-right = 1
 
 module-margin-left = 1
-module-margin-right = 2
+module-margin-right = 1
 
 ;font-0 = fixed:pixelsize=10;1
-font-0 = Fixedsys Excelsior:style=Regular:pixelsize=12
+font-0 = Fixedsys Excelsior:style=Regular:pixelsize=11
 ;font-0 = Roboto Mono for Powerline:pixelsize=12
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
-modules-left = i3
+modules-left = i3 memory cpu wlan
 modules-center = xwindow 
-modules-right = memory cpu wlan eth battery volume date
+modules-right = pulseaudio battery date
 
 wm-restack = i3
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
-separator = ~
+separator =
 
 [module/xwindow]
 type = internal/xwindow
@@ -173,9 +173,9 @@ label-mode-background = ${colors.background}
 
 ; focused = Active workspace on focused monitor
 label-focused = %icon%
-label-focused-foreground = ${colors.foreground}
+label-focused-foreground = ${colors.background}
 label-focused-background = ${colors.foreground-alt}
-label-focused-underline = ${colors.foreground}
+label-focused-underline = ${colors.background}
 label-focused-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
@@ -235,7 +235,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = "CPU"
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.foreground-alt}
 label = %percentage:2%%
@@ -243,17 +243,17 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = "RAM "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.foreground-alt}
 label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = net1
+interface = wlp3s0
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
+format-connected = <label-connected>
 format-connected-underline = ${colors.foreground-alt}
 label-connected = %essid%
 
@@ -361,10 +361,10 @@ battery = BAT0
 adapter = AC
 full-at = 98
 
-format-charging = <animation-charging> <label-charging>
+format-charging = <label-charging>
 format-charging-underline = ${colors.foreground-alt}
 
-format-discharging = <animation-discharging> <label-discharging>
+format-discharging = <label-discharging>
 format-discharging-underline = ${colors.foreground-alt}
 
 format-full-prefix = " "
@@ -392,7 +392,7 @@ type = internal/volume
 
 format-volume = <bar-volume>
 label-volume = O
-label-volume-foreground = ${root.foreground}
+label-volume-foreground = ${root.foreground-alt}
 
 format-muted-prefix = "M'd "
 format-muted-foreground = ${colors.foreground}

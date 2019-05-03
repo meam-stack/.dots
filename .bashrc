@@ -5,11 +5,13 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export TERM=rxvt-unicode
+
 alias ls='ls --color=auto'
 #export PS1="\[\e[44m\] \[\e[m\]\[\e[44m\]\u\[\e[m\]\[\e[44m\] \[\e[m\]\[\e[34;42m\]\[\e[m\]\[\e[42m\] \[\e[m\]\[\e[42m\]\w\[\e[m\]\[\e[42m\] \[\e[m\]\[\e[32;44m\]\[\e[m\]\[\e[44m\] \[\e[m\]\[\e[44m\]\\$\[\e[m\]\[\e[44m\] \[\e[m\]\[\e[34m\]\[\e[m\] "
 
 
-export PS1="\[\033[38;5;237m\][\u] \w \\$>\[$(tput sgr0)\] "
+export PS1="\[\033[38;5;37m\][\u] \w \\$>\[$(tput sgr0)\] "
 
 #export LANG=en_US.UTF-8
 

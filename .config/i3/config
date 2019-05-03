@@ -58,7 +58,7 @@ client.placeholder		$background	$background	$foreground	$cursorColor	$background
 client.background		$background
 
 # Set background
-exec --no-startup-id feh --bg-scale ~/.config/walls/3.png --no-fehbg
+exec --no-startup-id feh --bg-scale ~/.config/walls/8.png --no-fehbg
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -90,6 +90,8 @@ bindsym $mod+q kill
 bindsym --release $mod+d exec --no-startup-id rofi -show run
 # start browser
 bindsym $mod+w exec --no-startup-id qutebrowser
+# start wifi manager
+bindsym $mod+Shift+w exec --no-startup-id urxvtc -e nmtui
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -204,6 +206,14 @@ mode "resize" {
 
 # rebinded from mod+r to mod+shift+r
 bindsym $mod+Shift+r mode "resize"
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec light -A 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness
 
 # Start polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
