@@ -34,7 +34,7 @@ setup:
 
 ## Some dumb problems with dumb solutions that I ran into
 
-#### PROBLEM: 
+### PROBLEM: 
 > ranger not displaying image previews
 #### SOLUTION:
 > install w3m
