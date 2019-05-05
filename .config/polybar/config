@@ -93,7 +93,7 @@ font-4 = "Fixedsys Excelsior:style=Regular:size=10:antialias=true;1"
 
 modules-left = i3 xwindow
 modules-center =
-modules-right = arrow1 memory arrow2 cpu arrow1 temperature arrow2 wlan arrow1 eth arrow2 volume arrow1 battery arrow2 date
+modules-right = arrow1 memory arrow2 cpu arrow3 temperature arrow4 wlan arrow5 eth arrow6 volume arrow7 battery arrow8 date
 
 wm-restack = i3
 scroll-up = i3wm-wsnext
@@ -103,7 +103,7 @@ separator =
 
 [module/xwindow]
 type = internal/xwindow
-label = "%{T5}%title:0:32:...%%{T-}"
+label = "%{T5}%title:0:35:...%%{T-}"
 
 format-prefix = "     "
 format-prefix-foreground = ${colors.foreground-alt}
@@ -225,7 +225,7 @@ card = intel_backlight
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = ${colors.foreground-alt}
+content-foreground = ${colors.color6}
 content-background = ${colors.background}
 
 [module/arrow2]
@@ -233,13 +233,13 @@ type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
 content-foreground = ${colors.background}
-content-background = ${colors.foreground-alt}
+content-background = ${colors.color6}
 
 [module/arrow3]
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = ${colors.foreground-alt}
+content-foreground = ${colors.color2}
 content-background = ${colors.background}
 
 [module/arrow4]
@@ -247,13 +247,13 @@ type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
 content-foreground = ${colors.background}
-content-background = ${colors.foreground-alt}
+content-background = ${colors.color2}
 
 [module/arrow5]
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = ${colors.foreground-alt}
+content-foreground = ${colors.color3}
 content-background = ${colors.background}
 
 [module/arrow6]
@@ -261,34 +261,37 @@ type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
 content-foreground = ${colors.background}
-content-background = ${colors.foreground-alt}
+content-background = ${colors.color3}
+
+[module/arrow7]
+type = custom/text
+content = "%{T2} %{T-}"
+content-font = 2
+content-foreground = ${colors.color5}
+content-background = ${colors.background}
+
+[module/arrow8]
+type = custom/text
+content = "%{T2} %{T-}"
+content-font = 2
+content-foreground = ${colors.background}
+content-background = ${colors.color5}
 
 [module/cpu]
 type = internal/cpu
 interval = 2
 
-format-prefix =
-format-prefix-foreground = ${colors.background}
-format-prefix-background = ${colors.foreground-alt}
-
 label = " %{T3}%{T-} %percentage:2%"
-label-foreground = ${colors.foreground-alt}
+label-foreground = ${colors.color6}
 label-background = ${colors.background}
 
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix =
-format-prefix-foreground = ${colors.foreground-alt}
 
 label = " %{T3}%{T-} %percentage_used:2%"
 label-foreground = ${colors.background}
-label-background = ${colors.foreground-alt}
-
-;   
-;   
-;   
-:    
+label-background = ${colors.color6}
 
 [module/wlan]
 type = internal/network
@@ -297,15 +300,15 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-background = ${colors.background}
-format-connected-foreground = ${colors.foreground-alt}
+format-connected-foreground = ${colors.color2}
 
-label-connected = " %essid%"
+label-connected = "  %essid:0:8:..%"
 
 format-disconnected = <label-disconnected>
 format-disconnected-background = ${colors.background}
-format-disconnected-foreground = ${colors.foreground-alt}
+format-disconnected-foreground = ${colors.color2}
 
-label-disconnected = "no wifi"
+label-disconnected = "  no wifi"
 
 ramp-signal-0 = 
 ramp-signal-1 = 
@@ -326,7 +329,7 @@ format-connected-foreground = ${colors.background}
 label-connected = "  %local_ip%"
 
 format-disconnected = <label-disconnected>
-format-disconnected-background = ${colors.foreground-alt}
+format-disconnected-background = ${colors.color3}
 format-disconnected-foreground = ${colors.background}
 label-disconnected = "  no eth"
 
@@ -341,6 +344,9 @@ date-alt = " %Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M:%S
 
+format = <label>
+format-background = ${colors.background}
+format-foreground = ${colors.color5}
 label = %date% %time%
 
 [module/pulseaudio]
@@ -409,23 +415,22 @@ battery = BAT0
 adapter = AC
 full-at = 98
 
+format-full = " 99"
+format-full-prefix = " "
+format-full-foreground = ${colors.background}
+format-full-background = ${colors.color5}
+
 format-charging = <animation-charging> <label-charging>
+format-charging-prefix = " "
+format-charging-foreground = ${colors.background}
+format-charging-background = ${colors.color5}
 label-charging = %percentage%
 
 format-discharging = <ramp-capacity> <label-discharging>
-label-discharging = %percentage%
-
-format-full-prefix = " "
-format-full-foreground = ${colors.background}
-format-full-background = ${colors.foreground-alt}
-
-format-charging-prefix = " "
-format-charging-foreground = ${colors.background}
-format-charging-background = ${colors.foreground-alt}
-
 format-discharging-prefix = " "
 format-discharging-foreground = ${colors.background}
-format-discharging-background = ${colors.foreground-alt}
+format-discharging-background = ${colors.color5}
+label-discharging = %percentage%
 
 ;      
 ramp-capacity-0 = 
@@ -448,16 +453,17 @@ format-volume = <ramp-volume> <label-volume>
 format-volume-prefix = " "
 
 label-volume = %percentage%
-label-volume-foreground = ${colors.foreground-alt}
+label-volume-foreground = ${colors.color3}
 label-volume-background = ${colors.background}
 
 format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground}
+format-muted-foreground = ${colors.color3}
 label-muted =  
 
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
+ramp-volume-foreground = ${colors.color3}
 
 [module/temperature]
 type = internal/temperature
@@ -467,7 +473,7 @@ warn-temperature = 60
 format = <ramp> <label>
 format-prefix = " "
 format-foreground = ${colors.background}
-format-background = ${colors.foreground-alt}
+format-background = ${colors.color2}
 
 format-warn = <ramp> <label-warn>
 format-warn-prefix = " "
