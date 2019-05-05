@@ -1,16 +1,17 @@
-# My personal .dotfiles
+# My personal .dots
 
 setup:
 > arch linux
 > i3-gaps
 > urxvt
 > polybar
+> rofi
 
 ###
 ### PACKAGES ###
 ###
 
-pacman:
+# pacman:
 	git
 	rofi
 	qutebrowser
@@ -20,11 +21,20 @@ pacman:
 	feh
 	pulseaudio
 	xrandr
+	neofetch
+	maim
+	w3m
 
-aur:
+# aur:
 	fixedsys excelsior
 	polybar
-
-git:
+	otf-font-awesome-5-free
+# git:
 	yay
-	*dotfiles
+
+###
+### Some dumb problems with dumb solutions that I ran into ###
+###
+
+# PROBLEM: ranger not displaying image previews
+# SOLUTION: install w3m

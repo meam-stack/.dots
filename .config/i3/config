@@ -12,7 +12,7 @@
 set $mod Mod4
 
 # Set gaps
-gaps inner 4
+gaps inner 5
 gaps outer 0
 
 # Default window border
@@ -82,6 +82,9 @@ bindsym $mod+Shift+Return exec --no-startup-id urxvt
 
 # start ranger
 bindsym $mod+r exec --no-startup-id urxvtc -e ranger
+
+# take a screenshot
+bindsym Print exec --no-startup-id maim -m 10 ~/pics/screens/$(date +%s).png
 
 # kill focused window
 bindsym $mod+q kill
@@ -175,7 +178,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 # reload the configuration file
 bindsym $mod+F1 reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+F2 restart
+bindsym $mod+p restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
