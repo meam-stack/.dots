@@ -25,7 +25,7 @@ setup:
 > w3m
 
 ### aur:
-> fixedsys excelsior
+> ttf-fixedsys-excelsior-linux
 > polybar
 > otf-font-awesome-5-free
 ### git:
