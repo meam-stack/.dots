@@ -8,33 +8,33 @@ setup:
 > rofi
 
 
-# PACKAGES #
+## PACKAGES
 
 ### pacman:
-	git
-	rofi
-	qutebrowser
-	gvim
-	xdg-user-dirs
-	ranger
-	feh
-	pulseaudio
-	xrandr
-	neofetch
-	maim
-	w3m
+> git
+> rofi
+> qutebrowser
+> gvim
+> xdg-user-dirs
+> ranger
+> feh
+> pulseaudio
+> xrandr
+> neofetch
+> maim
+> w3m
 
 ### aur:
-	fixedsys excelsior
-	polybar
-	otf-font-awesome-5-free
+> fixedsys excelsior
+> polybar
+> otf-font-awesome-5-free
 ### git:
-	yay
+> yay
 
 
-# Some dumb problems with dumb solutions that I ran into #
+## Some dumb problems with dumb solutions that I ran into
 
 #### PROBLEM: 
-ranger not displaying image previews
+> ranger not displaying image previews
 #### SOLUTION:
-install w3m
+> install w3m
