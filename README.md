@@ -7,9 +7,8 @@ setup:
 > polybar
 > rofi
 
-#
+
 # PACKAGES #
-#
 
 ### pacman:
 	git
@@ -33,11 +32,9 @@ setup:
 	yay
 
 
-#
 # Some dumb problems with dumb solutions that I ran into #
-#
 
-### PROBLEM: 
+#### PROBLEM: 
 ranger not displaying image previews
-### SOLUTION:
+#### SOLUTION:
 install w3m
