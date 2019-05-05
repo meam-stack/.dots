@@ -7,11 +7,11 @@ setup:
 > polybar
 > rofi
 
-###
-### PACKAGES ###
-###
+#
+# PACKAGES #
+#
 
-# pacman:
+### pacman:
 	git
 	rofi
 	qutebrowser
@@ -25,16 +25,19 @@ setup:
 	maim
 	w3m
 
-# aur:
+### aur:
 	fixedsys excelsior
 	polybar
 	otf-font-awesome-5-free
-# git:
+### git:
 	yay
 
-###
-### Some dumb problems with dumb solutions that I ran into ###
-###
 
-# PROBLEM: ranger not displaying image previews
-# SOLUTION: install w3m
+#
+# Some dumb problems with dumb solutions that I ran into #
+#
+
+### PROBLEM: 
+ranger not displaying image previews
+### SOLUTION:
+install w3m
