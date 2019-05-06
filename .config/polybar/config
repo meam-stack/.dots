@@ -105,7 +105,7 @@ separator =
 type = internal/xwindow
 label = "%{T5}%title:0:35:...%%{T-}"
 
-format-prefix = "     "
+format-prefix = "   "
 format-prefix-foreground = ${colors.foreground-alt}
 
 [module/xkeyboard]
@@ -302,7 +302,7 @@ format-connected = <ramp-signal> <label-connected>
 format-connected-background = ${colors.background}
 format-connected-foreground = ${colors.color2}
 
-label-connected = "  %essid:0:8:..%"
+label-connected = " %essid:0:8:..%"
 
 format-disconnected = <label-disconnected>
 format-disconnected-background = ${colors.background}
@@ -478,7 +478,7 @@ format-background = ${colors.color2}
 format-warn = <ramp> <label-warn>
 format-warn-prefix = " "
 format-warn-foreground = ${colors.background}
-format-warn-background = ${colors.foreground-alt}
+format-warn-background = ${colors.color2}
 
 label = %temperature-c%
 

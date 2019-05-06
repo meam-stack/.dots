@@ -23,6 +23,7 @@ setup:
 > neofetch
 > maim
 > w3m
+> unzip
 
 ### aur:
 > ttf-fixedsys-excelsior-linux

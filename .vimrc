@@ -1,4 +1,5 @@
 " Custom syntax
+set number
 set term=rxvt
 syntax on
 colorscheme default
