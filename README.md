@@ -29,8 +29,11 @@ setup:
 > ttf-fixedsys-excelsior-linux
 > polybar
 > otf-font-awesome-5-free
+
 ### git:
 > yay
+> vim-plug
+> lightline
 
 
 ## Some dumb problems with dumb solutions that I ran into
@@ -45,8 +48,8 @@ setup:
 #### SOLUTION:
 > add 'export TERM=rxvt-unicode-256color' to .bashrc
 > add
->	if !has('gui_running')
->		set t_Co=256
->	endif
+>	if !has('gui_running')\n
+>		set t_Co=256\n
+>	endif\n
 > to .vimrc
 
