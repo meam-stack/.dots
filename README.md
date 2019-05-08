@@ -39,3 +39,14 @@ setup:
 > ranger not displaying image previews
 #### SOLUTION:
 > install w3m
+
+### PROBLEM:
+> lightline not showing after install
+#### SOLUTION:
+> add 'export TERM=rxvt-unicode-256color' to .bashrc
+> add
+>	if !has('gui_running')
+>		set t_Co=256
+>	endif
+> to .vimrc
+
