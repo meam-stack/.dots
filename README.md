@@ -1,44 +1,45 @@
 # My personal .dots
 
 setup:
-> arch linux
-> i3-gaps
-> termite / urxvt
-> polybar
-> rofi
++ arch linux
++ i3-gaps
++ termite / urxvt
++ polybar
++ rofi
 
 
 ## PACKAGES
 
 ### pacman:
-> git
-> rofi
-> qutebrowser
-> gvim
-> xdg-user-dirs
-> vifm
-> feh
-> pulseaudio
-> xrandr
-> neofetch
-> maim
-> w3m
-> unzip
-> nm-connection-editor
-> bluez bluez=utils
-> pandoc
-> texlive-most
-> zathura / mupdf
++ git
++ rofi
++ qutebrowser
++ w3m
++ gvim
++ xdg-user-dirs
++ vifm
++ feh
++ pulseaudio
++ xrandr
++ neofetch
++ maim
++ w3m
++ unzip
++ nm-connection-editor
++ bluez bluez=utils
++ pandoc
++ texlive-most
++ zathura / mupdf
 
 ### aur:
-> ttf-fixedsys-excelsior-linux
-> polybar
-> otf-font-awesome-5-free
++ ttf-fixedsys-excelsior-linux
++ polybar
++ otf-font-awesome-5-free
 
 ### git:
-> yay
-> vim-plug
-> lightline
++ yay
++ vim-plug
++ lightline
 
 
 ## Some dumb problems with dumb solutions that I ran into
@@ -63,6 +64,6 @@ to .vimrc
 ### PROBLEM
 vim colorscheme messing up
 #### SOLUTION
-add ```export TERM=xterm-color``` to ```.bashrc```
-add ```set term=xterm-color``` to ```.vimrc```
-if still doesn't work, uninstall gvim and termite, delete /usr/share/vim and then reinstall vim and termite
++ add ```export TERM=xterm-color``` to ```.bashrc```
++ add ```set term=xterm-color``` to ```.vimrc```
++ if still doesn't work, uninstall gvim and termite, delete /usr/share/vim and ~/.viminfo, reinstall vim and termite
