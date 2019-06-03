@@ -12,11 +12,11 @@
 set $mod Mod4
 
 # Set gaps
-gaps inner 8
+gaps inner 10
 gaps outer 0
 
 # Default window border
-default_border pixel 2
+default_border pixel 0
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -49,16 +49,19 @@ set_from_resource $color13 color13
 set_from_resource $color14 color14
 set_from_resource $color15 color15
 
-# class				border		bg		text 		indicator	child border
-client.focused			$background	$background	$foreground	$cursorColor	$foreground
-client.focused_inactive		$background	$background	$foreground	$cursorColor	$background
-client.unfocused		$background	$background	$foreground	$cursorColor	$background
-client.urgent			$background	$background	$foreground	$cursorColor	$background
-client.placeholder		$background	$background	$foreground	$cursorColor	$background
-client.background		$background
+# class				      border		bg		      text 		   indicator	   child border
+client.focused			   $background	$background	$foreground	$background	$background
+client.focused_inactive $background	$background	$foreground	$background	$background
+client.unfocused		   $background	$background	$foreground	$background	$background
+client.urgent			   $background	$background	$foreground	$background	$background
+client.placeholder		$background	$background	$foreground	$background	$background
+client.background		   $background
 
 # Set background
-exec --no-startup-id feh --bg-scale ~/.config/walls/8.png --no-fehbg
+exec --no-startup-id ~/.fehbg
+
+# Start compton
+exec --no-startup-id compton &
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -76,12 +79,13 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-exec --no-startup-id urxvtd
-bindsym $mod+Return exec --no-startup-id urxvtc
+#exec --no-startup-id urxvtd &
+#bindsym $mod+Return exec --no-startup-id urxvtc
 bindsym $mod+Shift+Return exec --no-startup-id urxvt
+bindsym $mod+Return exec --no-startup-id termite
 
 # start ranger
-bindsym $mod+r exec --no-startup-id urxvtc -e ranger
+bindsym $mod+f exec --no-startup-id termite -e vifm
 
 # take a screenshot
 bindsym Print exec --no-startup-id maim -m 10 ~/pics/screens/$(date +%s).png
@@ -94,7 +98,7 @@ bindsym --release $mod+d exec --no-startup-id rofi -show run
 # start browser
 bindsym $mod+w exec --no-startup-id qutebrowser
 # start wifi manager
-bindsym $mod+Shift+w exec --no-startup-id urxvtc -e nmtui
+bindsym $mod+Shift+w exec --no-startup-id termite -e nmtui
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -119,7 +123,7 @@ bindsym $mod+b split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -136,7 +140,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -178,9 +182,14 @@ bindsym $mod+Shift+0 move container to workspace 10
 # reload the configuration file
 bindsym $mod+F1 reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+p restart
+bindsym $mod+F2 restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+bindsym $mod+y resize shrink width 10 px or 10 ppt
+bindsym $mod+u resize shrink height 10 px or 10 ppt
+bindsym $mod+i resize grow height 10 px or 10 ppt
+bindsym $mod+o resize grow width 10 px or 10 ppt
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -208,7 +217,7 @@ mode "resize" {
 }
 
 # rebinded from mod+r to mod+shift+r
-bindsym $mod+Shift+r mode "resize"
+#bindsym $mod+Shift+r mode "resize"
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume

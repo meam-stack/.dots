@@ -1,0 +1,425 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/meam/
+	..
+1559166598
+'b
+	/home/meam/bin/
+	..
+1559166598
+'h
+	/home/meam/
+	..
+1559166598
+'z
+	/home/meam/.config/vifm
+	..
+1559166598
+
+# Bookmarks:
+
+# TUI:
+al
+q1
+v2
+ov
+m63
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/meam/faks/sa
+	n9
+5
+d/home/meam/faks
+	sa
+2
+d/home/meam
+	Downloads
+2
+d/home/meam/Downloads
+	sprint2.txt
+9
+d/home/meam
+	Downloads
+2
+d/home
+	meam
+2
+d/
+	usr
+17
+d/usr
+	bin
+1
+d/usr/bin
+	vim
+39
+d/usr
+	share
+8
+d/usr/share
+	vim
+39
+d/usr/share/vim
+	vim81
+1
+d/usr/share/vim/vim81
+	plugin
+11
+d/usr/share/vim/vim81/plugin
+	..
+0
+d/usr/share/vim/vim81
+	plugin
+11
+d/usr/share/vim
+	..
+0
+d/usr/share
+	w3m
+39
+d/home/meam
+	.vimrc
+40
+d/home
+	meam
+2
+d/
+	usr
+17
+d/usr
+	share
+8
+d/usr/share
+	vim
+38
+d/usr/share/vim
+	vimfiles
+2
+d/usr/share
+	vim
+38
+d/usr
+	share
+8
+d/
+	usr
+17
+d/home/meam
+	faks
+7
+d/home/meam/faks
+	sa
+2
+d/home/meam/faks/sa
+	pres
+7
+d/home/meam/faks/sa/pres
+	sa.pres.md.pdf
+3
+d/home/meam/faks/sa
+	pres
+7
+d/home/meam/faks
+	sa
+2
+d/home/meam
+	Downloads
+2
+d/home/meam/Downloads
+	DCČD
+1
+d/home/meam/Downloads/DCČD
+	Florjanovo
+2
+d/home/meam/Downloads/DCČD/Florjanovo
+	Seznam bodočih članov in članic.docx
+1
+d/home/meam/Downloads/DCČD
+	Društvo
+1
+d/home/meam/Downloads
+	DCČD
+1
+d/home/meam
+	faks
+7
+d/home/meam/faks
+	ui
+4
+d/home/meam/faks/ui
+	neural_network
+1
+d/home/meam/faks/ui/neural_network
+	index.html
+1
+d/home/meam/faks/ui
+	neural_network
+1
+d/home/meam/faks
+	ui
+4
+d/home/meam
+	.config
+2
+d/home/meam/.config
+	vifm
+20
+d/home/meam/.config/vifm
+	vifmrc
+5
+d/home/meam/.config
+	vifm
+20
+d/home/meam
+	faks
+7
+d/home/meam/faks
+	ui
+4
+d/home/meam/faks/ui
+	neural_network
+1
+d/home/meam/faks/ui/neural_network
+	css
+1
+d/home/meam/faks/ui/neural_network/css
+	style.css
+1
+d/home/meam/faks/ui/neural_network
+	css
+1
+d/home/meam/faks/ui/neural_network/css
+	style.css
+1
+d/home/meam/faks/ui/neural_network
+	index.html
+2
+d/home/meam/faks/ui
+	neural_network
+1
+d/home/meam/faks
+	ui
+4
+d/home/meam
+	Videos
+6
+d/home
+	meam
+2
+d/
+	dev
+2
+d/home/meam
+	.programs
+8
+d/home/meam/.programs
+	st
+1
+d/home/meam/.programs/st
+	st.c
+14
+d/home/meam/.programs
+	st
+1
+d/home/meam
+	faks
+7
+d/home/meam/faks
+	sa
+2
+d/home/meam/faks/sa
+	pres
+7
+d/home/meam/faks/sa/pres
+	documentation.txt
+1
+d/home/meam/faks/sa
+	pres
+7
+d/home/meam/faks/sa/pres
+	documentation.txt
+1
+d/home/meam/faks/sa
+	pres
+7
+d/home/meam/faks
+	sa
+2
+d/home/meam
+	.config
+2
+d/home/meam/.config
+	themes
+19
+d/home/meam/.config/themes
+	visibone.th
+39
+d/home/meam/.config
+	themes
+19
+d/home/meam
+	faks
+7
+d/home/meam/faks
+	sa
+2
+d/home/meam/faks/sa
+	pres
+7
+d/home/meam/faks/sa/pres
+	sa.pres.md.pdf
+3
+d/home/meam/.config/themes
+	dawn.th
+9
+d/home/meam/.config
+	walls
+22
+d/home/meam/.config/walls
+	wallpapers
+1
+d/home/meam/.config/walls/wallpapers
+	Art
+1
+d/home/meam/.config/walls/wallpapers/Art
+	..
+0
+d/home/meam/.config/walls/wallpapers
+	Cityscapes
+2
+d/home/meam/.config/walls/wallpapers/Cityscapes
+	1433294607975-4.jpg
+11
+d/home/meam/.config/walls/wallpapers
+	Cityscapes
+2
+d/home/meam/.config/walls/wallpapers/Cityscapes
+	toledo.jpg
+43
+d/home/meam/.config/walls/wallpapers
+	Etc
+3
+d/home/meam/.config/walls/wallpapers/Etc
+	1397537356698.jpg
+27
+d/home/meam/.config/walls/wallpapers
+	Future
+4
+d/home/meam/.config/walls/wallpapers/Future
+	room on fire.jpg
+43
+d/home/meam/.config/walls/wallpapers
+	Unsorted
+10
+d/home/meam/.config/walls/wallpapers/Unsorted
+	1505164216376.jpg
+21
+d/home/meam/.config/walls/wallpapers
+	Vibrant
+11
+d/home/meam/.config/walls/wallpapers/Vibrant
+	die_whenever.jpg
+38
+d/home/meam/.config/walls/wallpapers
+	Titans
+9
+d/home/meam/.config/walls/wallpapers/Titans
+	1445644255504.jpg
+1
+d
+
+# Right window history (oldest to newest):
+D/home/meam
+	..
+0
+D
+
+# Command line history (oldest to newest):
+:!sudo rm -rf VideoDecodeStats/ databases-incognito/
+:!cd ~
+:shel
+:bg
+:!feh --bg-scale %f<enter>
+:shell
+:mkdir st
+:rmdir st
+:!rmdir st
+:themes
+:mkdir themes
+:!touch solarized_dark.th
+:!rm -rf vim
+:!sudo rm -rf vim
+:cd ~
+:q
+:touch grayscale_dark.th
+:touch grayscale_light.th
+:touch greenscreen_light.th
+:touch greenscreen_dark.th
+:touch paraiso_dark.th
+:touch dawn.th
+:touch gotham.th
+:touch kasugano
+:touch kasugano.th
+:touch navy-and-ivory.th
+:sweetlove.th
+:touch sweetlove.th sweetlove_darker.th
+:touch trim-yer-beard.th
+:touch vacuous.th
+:touch erosion.th
+:touch yousai.th
+:touch baskerville_count.th
+:touch baskerville_eldorado.th
+:touch darkocean.th
+:touch matrix
+:!mv matrix matrix.th
+:touch baskerville_farside.th
+:touch baskerville_woods.th
+:touch dkeg_colorstar.th
+:touch dkeg_catch.th
+:touch dkeg_panels.th
+:touch dkeg_phoenix.th dkeg_teva.th
+:touch dkeg_vbug.th
+:touch jwr_dark.th
+:touch material.th
+:touch tlh.th
+:visibone.th
+:touch visibone.th
+:cd ~/.config/themes
+:rmdir
+
+# Search history (oldest to newest):
+/vm
+/vim
+/rm
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/home/meam/.local/share/vifm/Trash/000_14.jpg
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/meam/.local/share/vifm/Trash/000_.packages
+	/home/meam/.packages
+t/home/meam/.local/share/vifm/Trash/000_timer.log
+	/home/meam/timer.log
+t/home/meam/.local/share/vifm/Trash/000_14.jpg
+	/home/meam/14.jpg
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0
