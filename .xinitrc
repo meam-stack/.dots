@@ -1,4 +1,4 @@
-exec i3
+exec bspwm
 xrdb ~/.Xresources
 
 if [ -s ~/.Xmodmap ]; then

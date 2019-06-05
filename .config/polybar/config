@@ -91,7 +91,7 @@ font-3 = "FontAwesome5Brands:style=Solid:pixelsize=11:antialias=false;2"
 ; smaller font for xwindow
 font-4 = "Fixedsys Excelsior:style=Regular:size=10:antialias=true;1"
 
-modules-left = i3 xwindow
+modules-left = bspwm xwindow
 modules-center =
 modules-right = arrow1 memory arrow2 cpu arrow3 temperature arrow4 battery arrow5 wlan arrow6 eth arrow7 volume arrow8 date
 
@@ -130,6 +130,28 @@ mount-0 = /
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = %name%
+label-focused-foreground = ${colors.background-alt}
+label-focused-background = ${colors.foreground-alt}
+label-focused-padding = 1
+
+label-occupied = %name%
+label-occupied-padding = 1
+
+label-urgent = %name%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+label-empty = 
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 1
+
+; Separator in between workspaces
+; label-separator = |
 
 [module/i3]
 type = internal/i3

@@ -2,7 +2,7 @@
 
 setup:
 + arch linux
-+ i3-gaps
++ bspwm, sxhkd
 + termite / urxvt
 + polybar
 + rofi
@@ -67,3 +67,8 @@ vim colorscheme messing up
 + add ```export TERM=xterm-color``` to ```.bashrc```
 + add ```set term=xterm-color``` to ```.vimrc```
 + if still doesn't work, uninstall gvim and termite, delete /usr/share/vim and ~/.viminfo, reinstall vim and termite
+
+### PROBLEM
+bspwm inactive windows don't change opacity with compton
+#### SOLUTION
++ change ```mark-ovredir-focused``` to ```false``` in ```compton.conf```
